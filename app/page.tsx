@@ -5,13 +5,17 @@ export default function Home() {
   return (
     <main className="mx-auto flex w-full max-w-2xl flex-col gap-12 px-6 py-16">
       <section className="flex flex-col gap-4">
+        <h1 className="font-headline text-[58px] leading-none font-bold tracking-[-1px]">
+          <span className="text-secondary-700">Lum</span>
+          <span className="text-primary-500">ora</span>
+        </h1>
         <h1 className="font-heading text-4xl">Typography</h1>
-        <p className="text-text-body text-base">
+        <p className="text-body text-base">
           Body text uses Inter with the neutral charcoal tone from your palette.
         </p>
-        <span className="text-text-label text-xs font-medium tracking-wide uppercase">Label</span>
-        <p className="text-text-muted text-sm">Muted supporting copy.</p>
-        <p className="text-text-accent text-sm">Accent text in primary gold.</p>
+        <span className="text-label text-xs font-medium tracking-wide uppercase">Label</span>
+        <p className="text-subtle text-sm">Muted supporting copy.</p>
+        <p className="text-gold text-sm">Accent text in primary gold.</p>
       </section>
 
       <section className="flex flex-col gap-4">
