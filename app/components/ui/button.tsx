@@ -2,16 +2,12 @@ import { cn } from "@/lib/utils";
 import type { ButtonHTMLAttributes, ReactNode } from "react";
 
 const variantStyles = {
-  primary:
-    "bg-primary-900 text-text-inverse hover:bg-primary-800 active:bg-primary-900",
-  secondary:
-    "bg-neutral-100 text-neutral-700 hover:bg-neutral-200 active:bg-neutral-100",
-  inverted:
-    "bg-neutral-800 text-text-inverse hover:bg-neutral-900 active:bg-neutral-800",
+  primary: "bg-primary-900 text-inverse hover:bg-primary-800 active:bg-primary-900",
+  secondary: "bg-neutral-100 text-neutral-700 hover:bg-neutral-200 active:bg-neutral-100",
+  inverted: "bg-neutral-800 text-inverse hover:bg-neutral-900 active:bg-neutral-800",
   outlined:
     "border border-neutral-300 bg-transparent text-neutral-700 hover:bg-tertiary-100 active:bg-transparent",
-  accent:
-    "bg-primary text-secondary-700 hover:bg-primary-400 active:bg-primary",
+  accent: "bg-primary text-secondary-700 hover:bg-primary-400 active:bg-primary",
 } as const;
 
 const sizeStyles = {
@@ -45,12 +41,12 @@ export function Button({
       type="button"
       className={cn(
         "inline-flex cursor-pointer items-center justify-center gap-2 rounded-lg font-sans transition-colors",
-        "focus-visible:ring-2 focus-visible:ring-primary-400 focus-visible:ring-offset-2 focus-visible:ring-offset-tertiary-200 focus-visible:outline-none",
+        "focus-visible:ring-primary-400 focus-visible:ring-offset-tertiary-200 focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:outline-none",
         "disabled:pointer-events-none disabled:opacity-50",
         variantStyles[variant],
         sizeStyles[size],
         isIconOnly && "rounded-lg",
-        className,
+        className
       )}
       {...props}
     >
