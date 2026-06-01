@@ -8,6 +8,9 @@ const variantStyles = {
   outlined:
     "border border-neutral-300 bg-transparent text-neutral-700 hover:bg-tertiary-100 active:bg-transparent",
   accent: "bg-primary text-secondary-700 hover:bg-primary-400 active:bg-primary",
+  gold: "bg-primary-400 text-neutral-800 hover:bg-primary-500 active:bg-primary-400",
+  social:
+    "border border-neutral-200 bg-white text-neutral-700 hover:bg-tertiary-100 active:bg-white",
 } as const;
 
 const sizeStyles = {
