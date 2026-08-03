@@ -121,7 +121,7 @@ const faqs = [
   },
 ];
 
-export default function Homepage() {
+export default function HomePage() {
   return (
     <main className="bg-tertiary-50 text-secondary-900">
       <header className="mx-auto flex max-w-7xl items-center justify-between px-6 py-6">
@@ -424,7 +424,7 @@ export default function Homepage() {
           </div>
         </div>
         <div className="mx-auto mt-10 max-w-7xl px-6 text-center text-sm text-neutral-500">
-          © 2024 Lumora. Preserve your adventures.
+          © 2026 Lumora Collective. All rights reserved.
         </div>
       </footer>
     </main>
