@@ -1,5 +1,6 @@
 import Image from "next/image";
-import { BookOpen, Clock, LayoutDashboard, Sparkles, Star, Truck } from "lucide-react";
+// import { BookOpen, Clock, LayoutDashboard, Sparkles, Star, Truck } from "lucide-react";
+import { BookOpen, Sparkles, Star, Truck } from "lucide-react";
 import { Button } from "@/app/components/ui/button";
 import { Logo } from "@/app/components/logo";
 
@@ -53,7 +54,7 @@ const curations = [
   },
 ];
 
-export default function Pages() {
+export default function SecondPage() {
   return (
     <main className="min-h-screen bg-slate-50 text-slate-950">
       <header className="sticky top-0 z-20 border-b border-slate-200 bg-white/95 backdrop-blur-sm">
@@ -180,7 +181,7 @@ export default function Pages() {
         </div>
 
         <div className="grid gap-6 xl:grid-cols-2">
-          {curations.map((item, index) => (
+          {curations.map((item, ) => (
             <div key={item.title} className="overflow-hidden rounded-[2rem] bg-white shadow-lg">
               <div className="relative h-72 overflow-hidden bg-slate-100">
                 <Image
