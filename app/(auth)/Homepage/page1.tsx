@@ -121,7 +121,7 @@ const faqs = [
   },
 ];
 
-export default function HomePage() {
+export default function FirstPage() {
   return (
     <main className="bg-tertiary-50 text-secondary-900">
       <header className="mx-auto flex max-w-7xl items-center justify-between px-6 py-6">
