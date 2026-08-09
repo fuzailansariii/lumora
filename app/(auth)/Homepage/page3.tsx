@@ -5,32 +5,7 @@ import { Logo } from "@/app/components/logo";
 
 export default function ThirdPage() {
   return (
-    <main className="min-h-screen bg-slate-50 text-slate-950">
-      <header className="sticky top-0 z-20 border-b border-slate-200 bg-white/95 backdrop-blur-sm">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
-          <Logo size="md" />
-
-          <nav className="hidden items-center gap-8 md:flex">
-            <a href="#gallery" className="text-sm font-semibold text-slate-700 hover:text-slate-950">
-              Gallery
-            </a>
-            <a href="#features" className="text-sm font-semibold text-slate-700 hover:text-slate-950">
-              Features
-            </a>
-            <a href="#pricing" className="text-sm font-semibold text-slate-700 hover:text-slate-950">
-              Pricing
-            </a>
-            <a href="#faq" className="text-sm font-semibold text-slate-700 hover:text-slate-950">
-              FAQ
-            </a>
-          </nav>
-
-          <Button className="rounded-full bg-slate-950 px-6 py-2 text-white hover:bg-slate-800">
-            Create Book
-          </Button>
-        </div>
-      </header>
-
+    <main className="border-t border-neutral-200 bg-tertiary-100">
       <section className="mx-auto max-w-7xl px-6 py-24 sm:py-32">
         <div className="grid gap-12 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
           <div className="max-w-2xl">

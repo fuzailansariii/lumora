@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { BookOpen, Camera, CheckCircle2, LayoutDashboard, Sparkles, Star, ShieldCheck, Clock, Truck } from "lucide-react";
 import { Button } from "@/app/components/ui/button";
-import { Logo } from "@/app/components/logo";
+import {Logo} from "@/app/components/logo";
 
 const stats = [
   { label: "Happy customers", value: "100,000+" },
@@ -123,34 +123,7 @@ const faqs = [
 
 export default function FirstPage() {
   return (
-    <main className="bg-tertiary-50 text-secondary-900">
-      <header className="mx-auto flex max-w-7xl items-center justify-between px-6 py-6">
-        <Logo size="lg" />
-
-        <nav className="hidden items-center gap-8 md:flex">
-          <a href="#products" className="text-sm font-medium text-secondary-700 transition hover:text-secondary-900">
-            Products
-          </a>
-          <a href="#collections" className="text-sm font-medium text-secondary-700 transition hover:text-secondary-900">
-            Templates
-          </a>
-          <a href="#reviews" className="text-sm font-medium text-secondary-700 transition hover:text-secondary-900">
-            Reviews
-          </a>
-          <a href="#pricing" className="text-sm font-medium text-secondary-700 transition hover:text-secondary-900">
-            Pricing
-          </a>
-          <a href="#faq" className="text-sm font-medium text-secondary-700 transition hover:text-secondary-900">
-            FAQ
-          </a>
-        </nav>
-
-        <div className="flex items-center gap-3">
-          <Button variant="outlined" size="sm">Login</Button>
-          <Button>Start Designing</Button>
-        </div>
-      </header>
-
+    <main className="border-t border-neutral-200 bg-tertiary-100">
       <section className="relative overflow-hidden">
         <div className="absolute inset-0">
           <Image src="/hero-signup.jpg" alt="Luxurious photobook on a table" fill className="object-cover" />
@@ -250,7 +223,7 @@ export default function FirstPage() {
 
       <section id="collections" className="mx-auto max-w-7xl px-6 pb-20">
         <div className="mb-12 text-center">
-          <p className="text-sm uppercase tracking-[0.3em] text-primary-600">Curated Collections</p>
+          <p className="text-sm uppercase tracking-[0.3em] text-primary-700">Curated Collections</p>
           <h2 className="mt-4 text-3xl font-semibold text-secondary-900 sm:text-4xl">Bring your travel stories to life.</h2>
         </div>
 
@@ -317,7 +290,7 @@ export default function FirstPage() {
 
       <section id="pricing" className="mx-auto max-w-7xl px-6 pb-20">
         <div className="mb-12 text-center">
-          <p className="text-sm uppercase tracking-[0.3em] text-primary-600">Perfect for every story</p>
+          <p className="text-sm uppercase tracking-[0.3em] text-primary-700">Perfect for every story</p>
           <h2 className="mt-4 text-3xl font-semibold text-secondary-900 sm:text-4xl">Choose the photobook that fits your journey.</h2>
         </div>
 
@@ -358,7 +331,7 @@ export default function FirstPage() {
 
       <section id="faq" className="mx-auto max-w-7xl px-6 pb-20">
         <div className="mb-12 text-center">
-          <p className="text-sm uppercase tracking-[0.3em] text-primary-600">Questions?</p>
+          <p className="text-sm uppercase tracking-[0.3em] text-primary-700">Questions?</p>
           <h2 className="mt-4 text-3xl font-semibold text-secondary-900 sm:text-4xl">Everything you need to know.</h2>
         </div>
 
@@ -376,8 +349,8 @@ export default function FirstPage() {
 
       <section className="mx-auto max-w-7xl px-6 pb-16">
         <div className="rounded-[2rem] bg-secondary-950 px-8 py-14 text-center text-white shadow-2xl shadow-slate-950/20 sm:px-12">
-          <p className="text-sm uppercase tracking-[0.3em] text-primary-200">Preserve every memory</p>
-          <h2 className="mt-4 text-3xl font-semibold leading-tight sm:text-4xl">
+          <p className="text-sm uppercase tracking-[0.3em] text-primary-700">Preserve every memory</p>
+          <h2 className="mt-4 text-primary-400 font-semibold leading-tight sm:text-4xl">
             Join our community for design tips and 15% off your first photobook.
           </h2>
           <div className="mx-auto mt-8 flex max-w-2xl flex-col gap-3 sm:flex-row sm:items-center sm:justify-center">
@@ -391,42 +364,6 @@ export default function FirstPage() {
         </div>
       </section>
 
-      <footer className="border-t border-neutral-200 bg-white py-10">
-        <div className="mx-auto grid max-w-7xl gap-8 px-6 md:grid-cols-[1.5fr_1fr_1fr_1fr]">
-          <div>
-            <Logo size="lg" />
-            <p className="mt-6 max-w-xs text-sm leading-7 text-neutral-600">
-              Preserving the world’s most beautiful adventures through premium, museum-grade photobooks.
-            </p>
-          </div>
-          <div>
-            <p className="text-sm font-semibold uppercase tracking-[0.3em] text-neutral-500">Company</p>
-            <ul className="mt-6 space-y-3 text-sm text-neutral-600">
-              <li><a href="#" className="hover:text-secondary-900">About Us</a></li>
-         
-              <li><a href="#" className="hover:text-secondary-900">Press</a></li>
-            </ul>
-          </div>
-          <div>
-            <p className="text-sm font-semibold uppercase tracking-[0.3em] text-neutral-500">Support</p>
-            <ul className="mt-6 space-y-3 text-sm text-neutral-600">
-              <li><a href="#" className="hover:text-secondary-900">Help Center</a></li>
-              <li><a href="#" className="hover:text-secondary-900">Shipping</a></li>
-              <li><a href="#" className="hover:text-secondary-900">Returns</a></li>
-            </ul>
-          </div>
-          <div>
-            <p className="text-sm font-semibold uppercase tracking-[0.3em] text-neutral-500">Legal</p>
-            <ul className="mt-6 space-y-3 text-sm text-neutral-600">
-              <li><a href="#" className="hover:text-secondary-900">Privacy Policy</a></li>
-              <li><a href="#" className="hover:text-secondary-900">Terms of Service</a></li>
-            </ul>
-          </div>
-        </div>
-        <div className="mx-auto mt-10 max-w-7xl px-6 text-center text-sm text-neutral-500">
-          © 2026 Lumora Collective. All rights reserved.
-        </div>
-      </footer>
     </main>
   );
 }
