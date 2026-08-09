@@ -56,30 +56,7 @@ const curations = [
 
 export default function SecondPage() {
   return (
-    <main className="min-h-screen bg-slate-50 text-slate-950">
-      <header className="sticky top-0 z-20 border-b border-slate-200 bg-white/95 backdrop-blur-sm">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
-          <Logo size="md" />
-          <nav className="hidden items-center gap-8 md:flex">
-            <a href="#gallery" className="text-sm font-semibold text-slate-700 hover:text-slate-950">
-              Gallery
-            </a>
-            <a href="#features" className="text-sm font-semibold text-slate-700 hover:text-slate-950">
-              Features
-            </a>
-            <a href="#pricing" className="text-sm font-semibold text-slate-700 hover:text-slate-950">
-              Pricing
-            </a>
-            <a href="#faq" className="text-sm font-semibold text-slate-700 hover:text-slate-950">
-              FAQ
-            </a>
-          </nav>
-          <Button className="rounded-full bg-slate-950 px-6 py-2 text-white hover:bg-slate-800">
-            Create Book
-          </Button>
-        </div>
-      </header>
-
+    <main className="border-t border-neutral-200 bg-tertiary-100">
       <section id="gallery" className="mx-auto max-w-7xl px-6 py-20 sm:py-24">
         <div className="mx-auto max-w-2xl text-center">
           <p className="text-xs font-semibold uppercase tracking-[0.35em] text-slate-500">
@@ -248,20 +225,6 @@ export default function SecondPage() {
         </div>
       </section>
 
-      <footer className="border-t border-slate-200 bg-white py-10">
-        <div className="mx-auto flex max-w-7xl flex-col gap-6 px-6 sm:flex-row sm:items-center sm:justify-between">
-          <div>
-            <Logo size="sm" />
-            <p className="mt-4 text-sm text-slate-500">© 2026 Lumora Collective. All rights reserved.</p>
-          </div>
-          <div className="flex flex-wrap items-center gap-4 text-sm text-slate-500">
-            <a href="#" className="hover:text-slate-950">Privacy Policy</a>
-            <a href="#" className="hover:text-slate-950">Terms of Service</a>
-            <a href="#" className="hover:text-slate-950">Shipping</a>
-            <a href="#" className="hover:text-slate-950">Contact</a>
-          </div>
-        </div>
-      </footer>
     </main>
   );
 }
